@@ -11,4 +11,4 @@ Landing page per Wood Multiservice - Grossista di legnami
 [Istruzioni verranno aggiunte]
 
 ## Struttura Progetto
-[Da definire]
+[questa la definisco DOMANI]
