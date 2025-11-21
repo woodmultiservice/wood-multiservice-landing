@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CTAWhatsApp from '../components/CTAWhatsApp.astro';
+---
+<Layout title="Contatti" description="Richiedi informazioni o un preventivo su misura.">
+  <section class="section">
+    <h1 class="h1">Contatti</h1>
+    <p class="lead mt-3">Compila il form oppure contattaci su WhatsApp.</p>
+    <div class="mt-6">
+      <CTAWhatsApp />
+    </div>
+  </section>
+
+  <section class="section">
+    <form class="grid grid-cols-1 gap-4 sm:grid-cols-2" aria-label="Modulo contatti">
+      <div>
+        <label class="block text-sm font-medium">Nome e Cognome</label>
+        <input class="mt-1 w-full rounded border px-3 py-2" type="text" placeholder="Mario Rossi" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Email</label>
+        <input class="mt-1 w-full rounded border px-3 py-2" type="email" placeholder="mario@azienda.it" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Telefono</label>
+        <input class="mt-1 w-full rounded border px-3 py-2" type="tel" placeholder="+39 000 000 000" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Azienda</label>
+        <input class="mt-1 w-full rounded border px-3 py-2" type="text" placeholder="Azienda S.p.A." />
+      </div>
+      <div class="sm:col-span-2">
+        <label class="block text-sm font-medium">Messaggio</label>
+        <textarea class="mt-1 w-full rounded border px-3 py-2" rows="5" placeholder="Scrivi la tua richiesta..."></textarea>
+      </div>
+      <div class="sm:col-span-2">
+        <button type="button" class="rounded-md bg-neutral-900 px-4 py-2 text-white">Invia (placeholder)</button>
+      </div>
+    </form>
+  </section>
+</Layout>
