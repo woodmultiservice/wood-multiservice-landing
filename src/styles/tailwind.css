@@ -2,19 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Utility semantiche leggere di supporto */
-.container {
-  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+/* Base e componenti per tipografia e palette */
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-white text-neutral-900;
+    font-family: theme('fontFamily.sans');
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4 { @apply text-neutral-900; }
+  a { @apply text-neutral-900; }
 }
-.section {
-  @apply py-10 sm:py-12;
-}
-.h1 {
-  @apply text-3xl sm:text-4xl font-bold tracking-tight;
-}
-.h2 {
-  @apply text-2xl sm:text-3xl font-semibold;
-}
-.lead {
-  @apply text-lg text-neutral-700;
+
+@layer components {
+  /* Utility semantiche leggere di supporto */
+  .container { @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-10 sm:py-12; }
+
+  .h1 { @apply text-3xl sm:text-4xl font-bold tracking-tight; }
+  .h2 { @apply text-2xl sm:text-3xl font-semibold; }
+  .h3 { @apply text-xl sm:text-2xl font-semibold; }
+  .lead { @apply text-lg text-neutral-700; }
+
+  .btn { @apply inline-flex items-center rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2; }
+  .btn-primary { @apply btn bg-brand-green text-white px-4 py-2 hover:opacity-90 focus:ring-brand-green; }
+  .btn-outline { @apply btn border border-neutral-300 text-neutral-900 px-4 py-2 hover:bg-neutral-50 focus:ring-neutral-400; }
+
+  .nav-link { @apply block rounded px-3 py-2 text-sm hover:bg-neutral-100; }
+  .card { @apply rounded border border-neutral-200 p-4; }
 }

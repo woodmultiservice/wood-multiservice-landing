@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import CTAWhatsApp from '../components/CTAWhatsApp.astro';
+import CtaWhatsApp from '../components/CtaWhatsApp.astro';
 ---
 <Layout title="Contatti" description="Richiedi informazioni o un preventivo su misura.">
   <section class="section">
-    <h1 class="h1">Contatti</h1>
+    <h1 class="h1 text-brand-brown">Contatti</h1>
     <p class="lead mt-3">Compila il form oppure contattaci su WhatsApp.</p>
     <div class="mt-6">
-      <CTAWhatsApp />
+      <CtaWhatsApp />
     </div>
   </section>
 
@@ -34,7 +34,7 @@ import CTAWhatsApp from '../components/CTAWhatsApp.astro';
         <textarea class="mt-1 w-full rounded border px-3 py-2" rows="5" placeholder="Scrivi la tua richiesta..."></textarea>
       </div>
       <div class="sm:col-span-2">
-        <button type="button" class="rounded-md bg-neutral-900 px-4 py-2 text-white">Invia (placeholder)</button>
+        <button type="button" class="btn btn-outline">Invia (placeholder)</button>
       </div>
     </form>
   </section>
